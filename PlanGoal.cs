@@ -4,17 +4,17 @@ public abstract class PlanGoal
 {
     public String name;
 
-    public float value;
+    public float _value;
     public float changeOverTime;
 
-    public PlanGoal(float value, float changeOverTime)
+    public PlanGoal(float _value, float changeOverTime)
     {
-        this.value = value;
+        this._value =_value;
         this.changeOverTime = changeOverTime;
     }
 
-    public float GetDiscontentment(float value)
+    public float GetDiscontentment()
     {
-        return value;
+        return _value;
     }
 }
